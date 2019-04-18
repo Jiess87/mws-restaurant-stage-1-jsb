@@ -19,6 +19,11 @@ html, body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*
 * Header Styles
 */
@@ -29,24 +34,36 @@ header {
     width: 100%;
     text-align: center;
     background-color: #252831;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 
 }
 
+header h1 {
+    width: 100%;
+}
 header h1 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #eeeeee;
+    margin: 0.67rem;
     font-size: 1.66rem;
     letter-spacing: 0.66rem;
+    line-height: 1;
     font-weight: 300;
 }
 
-#breadcrumb {
+nav {
     width: 100%;
+}
+
+#breadcrumb {
     text-align: left;
     background-color: #eeeeee;
     margin: 0;
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #breadcrumb li {
@@ -71,4 +88,87 @@ header h1 a {
     /* Add a color on mouse-over */
     color: #01447e;
     text-decoration: underline;
+}
+
+/*
+* Content Styles
+*/
+
+main {
+    width: 100%;
+    z-index: 0;
+    padding-top: 5rem;
+}
+
+.inside main {
+    padding-top: 7.1rem; 
+}
+
+#map-container, #map {
+    height: 24rem;
+    width: 100%;
+}
+
+@media screen and (max-width:515px) {
+    main {
+        padding-top: 7.3rem;
+    }
+
+    .inside main {
+        padding-top: 9.4rem;
+    }
+
+    #map-container, #map {
+        height: 20rem;
+    }
+}
+
+#content-container {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0275d8;
+}
+
+.filter-options h2 {
+    color: #eeeeee;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.67rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.filter-options select {
+    font-size: 0.8rem;
+    margin: 0.67rem;
+}
+
+/*
+* Footer Styles
+*/
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    padding: 0.6rem;
+    margin: 0;
+    font-size: 0.6rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #eeeeee;
+    background-color: #252831;
+}
+
+footer p a {
+    white-space: nowrap;
+    color: #0275d8;
+    text-decoration: none;
 }
