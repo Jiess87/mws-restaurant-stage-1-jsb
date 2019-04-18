@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*
+* Global Styles
+*/
+
+* {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* Header Styles
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #252831;
+
+}
+
+header h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.66rem;
+    letter-spacing: 0.66rem;
+    font-weight: 300;
+}
+
+#breadcrumb {
+    width: 100%;
+    text-align: left;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+#breadcrumb li {
+    /* Display list items side by side */
+    display: inline;
+}
+
+#breadcrumb li+li:before {
+    /* Add a slash symbol (/) before/behind each list item */
+    padding: 0.5rem;
+    color: black;
+    content: "/\00a0";
+}
+
+#breadcrumb li a {
+    /* Add a color to all links inside the list */
+    color: #0275d8;
+    text-decoration: none;
+}
+
+#breadcrumb li a:hover {
+    /* Add a color on mouse-over */
+    color: #01447e;
+    text-decoration: underline;
+}
