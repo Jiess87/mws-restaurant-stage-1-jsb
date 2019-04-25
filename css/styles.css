@@ -37,7 +37,7 @@ header {
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 
 }
 
@@ -50,6 +50,7 @@ header h1 {
     margin: 0;
     padding: 1.5rem 1rem 1.5rem 1rem;
     text-transform: uppercase;
+    color: #eeeeee;
 }
 
 header a {
@@ -105,10 +106,6 @@ main {
     background-color: #eeeeee;
 }
 
-.inside main {
-    padding-top: 7.1rem; 
-}
-
 #map-container, #map {
     height: 24rem;
     width: 100%;
@@ -117,10 +114,6 @@ main {
 @media screen and (max-width:546px) {
     main {
         padding-top: 6.5rem;
-    }
-
-    .inside main {
-        padding-top: 9.4rem;
     }
 
     #map-container, #map {

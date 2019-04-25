@@ -17,29 +17,29 @@
 <body class="inside">
 
   <header>
-    
-    <a href="/"><h1>Restaurant Reviews</h1></a>
-    <nav>
-      <ul id="breadcrumb" >
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
 
+    <h1>Restaurant Reviews</h1>
 
   </header>
 
   <main id="maincontent">
 
-    <section id="map-container">
+    <nav>
+        <ul role="breadcrumb" id="breadcrumb" >
+          <li><a href="/">Home</a></li>
+        </ul> 
+    </nav>
+
+    <section tabindex="0" aria-label="Restaurant Map" id="map-container">
       <div id="map"></div>
     </section>
 
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h1 tabindex="0" id="restaurant-name"></h1>
       <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <p tabindex="0" id="restaurant-cuisine"></p>
+      <p tabindex="0" id="restaurant-address"></p>
+      <table aria-label="Opening Hours" tabindex="0" id="restaurant-hours"></table>
     </section>
 
     <section id="reviews-container">
@@ -50,7 +50,7 @@
 
   <footer id="footer">
 
-    <p>Copyright &copy; 2017 <a href="/"><b>Restaurant Reviews</b></a> All Rights Reserved.</p>
+    <p tabindex="0">Copyright &copy; 2017 <a href="/"><b>Restaurant Reviews</b></a> All Rights Reserved.</p>
 
   </footer>
 
