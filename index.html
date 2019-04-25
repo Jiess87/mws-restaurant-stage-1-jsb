@@ -18,26 +18,27 @@
 
   <header>
 
-    <a href="/"><h1>Restaurant Reviews</h1></a>
+    <a href="/" aria-labelledby="home"><h1 id="home" aria-label="Homepage">Restaurant Reviews</h1></a>
 
   </header>
 
   <main id="maincontent">
 
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-
-    <section id="content-container">
-      <div class="filter-options">
-        <h2>Filter Results</h2>
+    <section id="filter-options">
+        <h2 tabindex="0">Filter Restaurants</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-      </div>
+    </section>
+
+    <section tabindex="0" aria-label="Filtered Results Map" id="map-container">
+      <div id="map"></div>
+    </section>
+
+    <section id="content-container">
       <ul id="restaurants-list"></ul> 
     </section>
 

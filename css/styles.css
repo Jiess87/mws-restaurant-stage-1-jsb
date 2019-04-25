@@ -101,7 +101,7 @@ nav {
 main {
     width: 100%;
     z-index: 0;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
     background-color: #eeeeee;
 }
 
@@ -114,9 +114,9 @@ main {
     width: 100%;
 }
 
-@media screen and (max-width:515px) {
+@media screen and (max-width:546px) {
     main {
-        padding-top: 7.3rem;
+        padding-top: 6.5rem;
     }
 
     .inside main {
@@ -133,13 +133,13 @@ main {
     padding: 0;
 }
 
-.filter-options {
+#filter-options {
     display: flex;
     flex-wrap: wrap;
     background-color: #0275d8;
 }
 
-.filter-options h2 {
+#filter-options h2 {
     text-transform: uppercase;
     color: #eeeeee;
     margin: 0;
@@ -150,12 +150,12 @@ main {
 }
 
 @media screen and (max-width:515px) {
-    .filter-options h2 {
+    #filter-options h2 {
         width: 100%;
     }
 }
 
-.filter-options select {
+#filter-options select {
     font-size: 0.8rem;
     margin: 0.67rem;
 }
