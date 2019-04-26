@@ -1,3 +1,25 @@
+# Original Code Readme Below!!
+
+### Restaurant Reviews _App_
+
+This is the final project of the current Udacity Front-End Nanodegree. It pulls data from a JSON to present restaurants, adresses and reviews in the New York area.
+
+#### Dependencies
+
+The code is sourced from https://github.com/udacity/mws-restaurant-stage-1.
+
+The app relies on [Mapbox](https://www.mapbox.com) & [Leaflet.js](https://leafletjs.com/)
+
+
+
+
+
+
+
+
+## _ORIGINAL README_
+
+
 # Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
