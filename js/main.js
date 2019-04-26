@@ -5,6 +5,20 @@ var newMap
 var markers = []
 
 /**
+ * Register Service Worker if supported
+ */
+
+window.addEventListener('load', function() {
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/sw.js').then(function() {
+      console.log('ServiceWorker registered');
+    }).catch(function(err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  }
+});
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -190,3 +204,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
+
