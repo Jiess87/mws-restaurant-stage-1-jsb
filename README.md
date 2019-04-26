@@ -10,12 +10,15 @@ The code is sourced from https://github.com/udacity/mws-restaurant-stage-1.
 
 The app relies on [Mapbox](https://www.mapbox.com) & [Leaflet.js](https://leafletjs.com/)
 
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 ## _ORIGINAL README_
 
