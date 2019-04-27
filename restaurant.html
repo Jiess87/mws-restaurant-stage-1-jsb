@@ -24,18 +24,18 @@
 
   <main id="maincontent">
 
-    <nav>
-        <ul role="breadcrumb" id="breadcrumb" >
+    <nav role="navigation" aria-label="Breadcrumb">
+        <ul id="breadcrumb" >
           <li><a href="/">Home</a></li>
         </ul> 
     </nav>
 
-    <section tabindex="0" aria-label="Restaurant Map" id="map-container">
+    <section role="application" tabindex="0" aria-label="Restaurant Map" id="map-container">
       <div id="map"></div>
     </section>
 
     <section id="restaurant-container">
-      <h1 tabindex="0" id="restaurant-name"></h1>
+      <h2 tabindex="0" id="restaurant-name"></h2>
       <img id="restaurant-img">
       <p tabindex="0" id="restaurant-cuisine"></p>
       <p tabindex="0" id="restaurant-address"></p>
